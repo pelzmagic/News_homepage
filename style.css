@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+
+:root {
+    --SOFT_ORANGE: hsl(35, 77%, 62%);
+    --SOFT_RED: hsl(5, 85%, 63%);
+    --OFF_WHITE: hsl(36, 100%, 99%);
+    --GRAYISH_BLUE: hsl(233, 8%, 79%);
+    --DARK_GRAYISH_BLUE: hsl(236, 13%, 42%);
+    --VERY_DARK_BLUE: hsl(240, 100%, 5%);
+}
+
+body {
+    background: var(--OFF_WHITE);
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+}
