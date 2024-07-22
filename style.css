@@ -24,12 +24,12 @@ body {
     width: 90vw;
     margin: auto;
 }
-nav {
+header {
     display: flex;
-    gap: 60rem;
     align-items: center;
     margin-top: 1.7rem;
-    width: 100%;
+    width: 90vw;
+    justify-content: space-between;
 }
 .nav_list {
     width: 28%;
@@ -145,7 +145,7 @@ p {
     'two'
     'three'
     'four';
-    width: (100%, 70rem);
+    width: 100%;
     margin-top: 2rem;
 }
 .retro_image {
@@ -169,6 +169,7 @@ p {
     "one"
     "two"
     "three";
+     border: 1px solid red;
 }
 .first_product {
     grid-area: one;
@@ -189,17 +190,61 @@ p {
     width: 70%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
     .news_section {
         grid-template-areas: 
         'one one four'
         'two three four';
+        width: 100%;
+        border: 1px solid blue;
+    }
+    .future {
+        border: 1px solid red;
+        width: 100%;
     }
     .product_news {
         grid-template-areas: "one two three";
+        margin-top: 2rem;
+    }
+    .future {
+        font-size: 2rem;
+    }
+    .details_info {
+        border: 1px solid red;
+        width: 100%;
+        font-size: .6rem;
+    }
+    .details {
+        gap: 20px;
+    }
+    .heading {
+        font-size: .8rem;
+    }
+    .heading_news {
+        font-size: .73rem;
+        color: var(--OFF_WHITE);
+    }
+    .news_details {
+        font-size: .49rem;
+        margin-top: 10px;
+    }
+    .first_product {
+        border: 1px solid blue;
+        gap: 10px;
+    }
+    h3 {
+        font-size: .6rem;
+    }
+    .info_details {
+        font-size: .35rem;
+        width: 100%;
     }
 }
 @media (max-width: 545px) {
+
+    body {
+        overflow-x: hidden;
+    }
     .future {
         width: 85%;
     }
